@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Condensed&display=swap');
+
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+    scroll-behavior: smooth;
+}
+*{
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;;
+    transition: all 1s ease;
+}
+a{
+    color:white;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+a:hover{
+    color:black;
+
+}
+.quote{
+
+    text-align: end;
+    margin-right: 20px;
+}
+.lamboquote{
+    font-size: 2rem;
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+
+.cont{
+    margin: 0%;
+    display: flex;
+    /* width: 100%; */
+    background-color: red;
+    padding:20px 200px 20px 50px;
+    color:white;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1.2rem;
+    height: 60px;
+    align-items: center;
+    animation:navanim 1.5s;
+    max-width: 100%;
+
+}
+.total{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.frstyle{
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 150%;
+    height: 168%;
+    z-index: -3000;
+    transform: translateX(148px) translateY(-900px) rotate(30deg);
+    overflow: hidden;
+}
+
+.lambo{
+    width:50%;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 60px;
+    display: block;
+    animation: quotejump 1.5s;
+}
+.lamboimg{
+    animation:imgjump 1.5s;
+}
+
+.opacity{
+    opacity: 80%;
+    transition: all 1s;
+}
+
+.bmw{
+    
+    width: 325px;left:50px;
+}
+
+.pagani{
+    width: 500px;
+    float:right;
+    margin:30px;
+
+}
+.otherguy{
+    width: 500px;
+    float:left;
+    margin:30px;
+}
+
+
+
+
+
+
+
+
+
+
+.mission{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.mission1{
+    border-radius: 25px;
+    border: 2px solid red;
+    position: relative;
+    width:400px;
+    height:500px;
+
+    padding:30px;
+    margin:30px;
+
+}
+.mission1 img{
+    position: absolute;
+    width:200px;
+    left: 25%;
+}
+
+.mission1 h2{
+    position: absolute;
+    bottom: 0%;
+
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.cars{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+}
+.car1{
+    border-radius: 25px;
+    border: 2px solid red;
+    position: relative;
+    width:400px;
+    height:500px;
+
+    padding:30px;
+    margin:30px;
+    /* overflow: hidden; */
+
+}
+.car1 img{
+    position: absolute;
+    width:450px;
+    left: -20px;
+    top:50px;
+    animation: img1jump 1s ease-in;
+}
+.car1 h2{
+    position: absolute;
+    top: 65%;
+    padding: 10px;
+}
+
+.details{
+    width: 100%;
+    position: absolute;
+    bottom:7%;
+}
+.morebtn{
+    width:100px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255 50 50);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutus{
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.75rem;
+}
+
+
+
+
+
+
+.contact{
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-color: greenyellow;
+    margin-bottom: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('contact-us-concept-free-photo.jpg');
+    background-position: center;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.content input,select,button{
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.submit{
+    width:200px;
+    background-color: lightgreen;
+    border: none;
+    transition: 0.3s;
+}
+.submit:hover{
+    background-color: green;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.brush{
+    width: 175px; left:30%;
+}
+.thoughts{
+    opacity:0;
+    height:200px;
+}
+.diff{
+    display: block;text-align: center;font-size:2.85rem;margin-top:150px;
+}
+.non{
+    display: none;
+}
+@media (max-width:414px) {
+
+    
+    .frstyle {
+        position: absolute;
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 318%;
+        z-index: -3000;
+        transform: translate(41%,-56%)rotate(126deg);
+        overflow: hidden;
+    }
+    .lambo{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .lamboimg{
+        width: 100%;
+        
+    }
+
+    .navbar{
+        
+        width: 100%;
+        top: 0;
+        z-index: 200;
+        justify-content: center;
+    }
+    
+    .cont{
+        margin: 0%;
+        display: flex;
+        padding: 0%;
+        width: 100%;
+        background-color: red;
+        color:white;
+        flex-direction: column;
+        font-size: 1.2rem;
+        height: 50px;
+        align-items: center;
+        animation:navanim 1.5s;
+
+    }
+    .cont #logo{
+        width: 100%;
+        margin-bottom: 0.5px;
+        margin-top: 0.5px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .cont #logo a{
+        margin-right: 60%;
+    }
+.cont a{
+    font-size: 1rem;
+
+}
+
+    .cont #yes1, #yes2,#yes3,#yes4{
+        width: 100%;
+        margin-bottom: 0.5px;
+        margin-top: 0.5px;
+        display: none;
+        text-align: center;
+        background-color: red;
+        transition: all 1s ease;
+    }
+
+    .non{
+        width: 50px;
+        transform: translate(0px, -5px);
+        display: inline-block;
+    }
+
+    /* lambo */
+    .lambo{
+        margin-top: 30px;
+    }
+    .lamboquote{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .total{
+        height: 50%;
+    }
+
+    /* lambo over */
+    
+    
+    /* different */
+    .diff{
+        font-size: 1.9rem;
+        margin-top: 70px;
+        margin-bottom: 30px;
+
+    }
+    /* missions */
+    .mission{
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        height: 1500px;
+    }
+    .mission1{
+        padding: 0%;
+        margin: 0%;
+        width: 70%;
+        height: 28%;
+        align-items: center;
+        justify-content: center;
+    }
+    .mission1 img{
+        width: 75%;
+        transform: translate(-17%);
+
+    }
+    .mission1 h2{
+        font-size: 1.5rem;
+        bottom: 0%;
+    }
+/* mission over */
+
+
+
+
+/* best selling */
+.cars{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.car1{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.car1 h3,button,a{
+    font-size: 1.4rem;
+
+}
+.bmw{
+    transform: translate(-4%);
+}
+
+.car1 img{
+    width: 118%;
+    transform: translate(5%);
+}
+
+
+/* best selling over*/
+
+/*  about us*/
+.aboutus{
+    width: 100%;
+}
+.aboutus h4{
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+.pagani{
+     margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.otherguy{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 100%;
+}
+.map{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+}
+/* about us over */
+
+/* contact us */
+.contact{
+    height: 75%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 75%;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content input,select,button{
+    background-color: white;
+    width: 150px;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    overflow: hidden;
+}
+.icons{
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.icons a{
+    width: 20px;
+}
+/* contact usover */
+
+*{
+    max-width: 100%;
+}
+}
+
+
+
+
+
+
+@keyframes imgjump{
+    0%{
+        transform: translateX(1600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes img1jump{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes quotejump {
+    0%{
+        transform: translateY(1600px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes navanim {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
